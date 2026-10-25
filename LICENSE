@@ -23,7 +23,8 @@ SOFTWARE.
 ---------------------------------------------------------------------------
 Ambito / Scope
 
-- Codice (Generatore_Provvedimenti_Baskin.html): licenza MIT, testo qui sopra.
+- Codice (Generatore_Provvedimenti_Baskin.html, script e workflow in .github):
+  licenza MIT, testo qui sopra.
 - Testi propri (formule dei provvedimenti tipo, istruzioni, README.md):
   Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0), vedi
   LICENSE-CC-BY-4.0.md.

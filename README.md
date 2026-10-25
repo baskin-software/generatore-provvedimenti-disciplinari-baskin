@@ -17,6 +17,8 @@ Nulla viene salvato né inviato: vedi [Privacy](#privacy).
 | `LICENSE` | Licenza MIT del codice e ambito delle licenze |
 | `LICENSE-CC-BY-4.0.md` | Licenza CC BY 4.0 dei testi propri |
 | `CITATION.cff` | Come citare il progetto |
+| `.github/workflows/pages.yml` | Azione GitHub che pubblica il generatore su GitHub Pages |
+| `.github/workflows/build_site.sh` | Prepara il sito con le versioni dei rami principale e `beta` |
 
 ## Uso
 
@@ -46,6 +48,21 @@ Ogni gara ha una sola cella: prepara insieme tutti i provvedimenti della stessa 
 ```
 Gara n. 12 del 18/10/2026 – ROSSI Mario (ASD Esempio), atleta – squalifica per 1 gara e ammenda di Euro 40,00 per comportamento offensivo nei confronti degli arbitri (espulso) [art. 117 c. 1 Tab. C n. 2 RTN]
 ```
+
+## Pubblicazione online (GitHub Pages)
+
+Il generatore si può usare anche online. L'azione GitHub `.github/workflows/pages.yml` pubblica su GitHub Pages solo `Generatore_Provvedimenti_Baskin.html`, a ogni modifica del file oppure a mano dalla scheda *Actions*:
+
+* la versione del ramo principale (`main`, oppure `master` se `main` non c'è) all'indirizzo del sito, `https://<utente>.github.io/<repo>/`;
+* quella del ramo `beta` (se esiste) nella sottocartella `/beta/`, così si può provare una versione nuova senza toccare quella in uso.
+
+Se il ramo principale non esiste si pubblica solo `beta` e l'indirizzo del sito rimanda a `/beta/`. La preparazione del sito è nello script `.github/workflows/build_site.sh`.
+
+Per attivarla, una sola volta: *Settings* → *Pages* → *Build and deployment* → *Source*: **GitHub Actions**.
+
+GitHub Pages accetta pubblicazioni solo dal ramo predefinito. Un push sul ramo `beta` rilancia quindi l'azione sul ramo predefinito, che ricostruisce il sito leggendo l'HTML da tutti i rami, senza modificare le regole di protezione dell'ambiente `github-pages`. Per questo i file in `.github/workflows` devono essere presenti, aggiornati, anche nel ramo predefinito.
+
+Anche online tutto resta nel browser: il server di GitHub registra solo i normali dati tecnici di accesso (vedi [Privacy](#privacy)).
 
 ## Ricerca
 
@@ -104,7 +121,7 @@ Dove una sanzione colpisce soggetti diversi (es. Tab. F2: Società e allenatore)
 
 ## Licenza
 
-* **Codice** (`Generatore_Provvedimenti_Baskin.html`, esclusi i testi del regolamento): licenza MIT, vedi `LICENSE`.
+* **Codice** (`Generatore_Provvedimenti_Baskin.html`, esclusi i testi del regolamento, e script e workflow in `.github`): licenza MIT, vedi `LICENSE`.
 * **Testi propri** (formule dei provvedimenti tipo, istruzioni, `README.md`): licenza CC BY 4.0, vedi `LICENSE-CC-BY-4.0.md`.
 * **Testo del Regolamento Disciplinare**: appartiene a EISI (Ente Italiano Sport Inclusivi) ed è riportato così com'è per sola consultazione. Non è coperto da queste licenze e fa fede la versione ufficiale pubblicata da EISI.
 
