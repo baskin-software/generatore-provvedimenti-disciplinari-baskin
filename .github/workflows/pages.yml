@@ -1,7 +1,7 @@
-# pages.yml by Daniele Lolli (UncleDan) feat. Claude AI - Release 1.0 - 2026-10-25 15-13-05
+# pages.yml by Daniele Lolli (UncleDan) feat. Claude AI - Release 1.1 - 2026-10-25 15-54-14
 # Pubblica su GitHub Pages solo il generatore HTML:
-#   - ramo main (o master) -> https://<utente>.github.io/<repo>/
-#   - ramo beta            -> https://<utente>.github.io/<repo>/beta/
+#   - ramo main (o master) -> https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/
+#   - ramo beta            -> https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/beta/
 # Se il ramo principale non esiste si pubblica solo beta (vedi build_site.sh).
 # GitHub Pages accetta pubblicazioni solo dal ramo predefinito: un push su un
 # altro ramo (es. beta) rilancia questa stessa azione sul ramo predefinito, che

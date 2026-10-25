@@ -1,12 +1,15 @@
 # Generatore Provvedimenti Disciplinari Baskin
 
-Pagina HTML unica, da aprire nel browser (anche offline e da cellulare), che aiuta il Giudice Unico a scrivere i provvedimenti disciplinari del Baskin:
+Pagina HTML unica, da aprire nel browser (anche offline e da cellulare) o da usare online, che aiuta il Giudice Unico a scrivere i provvedimenti disciplinari del Baskin:
 
 * **cerca** nel Regolamento Disciplinare (artt. 89-158 del Regolamento Tecnico Nazionale della Disciplina Baskin 2026) e tra 160 **provvedimenti tipo** già formulati sul testo del regolamento, con articolo, comma, tabella e sanzione;
 * **compone** la riga del provvedimento con gara, destinatario, parti variabili e aggiunte facoltative;
 * produce un **testo da copiare**, modificabile a mano, da incollare nel foglio `Provvedimenti Disciplinari` del calendario e nella mail di comunicazione.
 
 Nulla viene salvato né inviato: vedi [Privacy](#privacy).
+
+* **Usalo online**: <https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/> (versione di prova: <https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/beta/>)
+* **Codice sorgente**: <https://github.com/baskin-software/generatore-provvedimenti-disciplinari-baskin> (organizzazione GitHub [baskin-software](https://github.com/baskin-software))
 
 ## File
 
@@ -53,8 +56,8 @@ Gara n. 12 del 18/10/2026 – ROSSI Mario (ASD Esempio), atleta – squalifica p
 
 Il generatore si può usare anche online. L'azione GitHub `.github/workflows/pages.yml` pubblica su GitHub Pages solo `Generatore_Provvedimenti_Baskin.html`, a ogni modifica del file oppure a mano dalla scheda *Actions*:
 
-* la versione del ramo principale (`main`, oppure `master` se `main` non c'è) all'indirizzo del sito, `https://<utente>.github.io/<repo>/`;
-* quella del ramo `beta` (se esiste) nella sottocartella `/beta/`, così si può provare una versione nuova senza toccare quella in uso.
+* la versione del ramo principale (`main`, oppure `master` se `main` non c'è) all'indirizzo del sito, <https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/>;
+* quella del ramo `beta` (se esiste) nella sottocartella `/beta/` (<https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/beta/>), così si può provare una versione nuova senza toccare quella in uso.
 
 Se il ramo principale non esiste si pubblica solo `beta` e l'indirizzo del sito rimanda a `/beta/`. La preparazione del sito è nello script `.github/workflows/build_site.sh`.
 

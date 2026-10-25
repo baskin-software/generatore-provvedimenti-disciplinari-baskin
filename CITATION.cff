@@ -5,6 +5,8 @@ authors:
   - family-names: "Lolli"
     given-names: "Daniele"
     alias: "UncleDan"
-version: "1.2"
+version: "1.3"
+repository-code: "https://github.com/baskin-software/generatore-provvedimenti-disciplinari-baskin"
+url: "https://baskin-software.github.io/generatore-provvedimenti-disciplinari-baskin/"
 license: MIT
 type: software

@@ -9,7 +9,7 @@ Testo legale completo: <https://creativecommons.org/licenses/by/4.0/legalcode.it
 Sei libero di **condividere** (copiare e ridistribuire in qualsiasi formato) e **modificare** (adattare, trasformare, costruirci sopra) per qualsiasi fine, anche commerciale, a queste condizioni:
 
 - **Attribuzione**: devi citare l'autore, indicare il link alla licenza e dire se hai fatto modifiche, in modo ragionevole e senza suggerire che l'autore approvi te o il tuo uso. Citazione suggerita:
-  > Basato su "Generatore Provvedimenti Disciplinari Baskin" di Daniele Lolli (UncleDan), licenza CC BY 4.0.
+  > Basato su "Generatore Provvedimenti Disciplinari Baskin" di Daniele Lolli (UncleDan), https://github.com/baskin-software/generatore-provvedimenti-disciplinari-baskin, licenza CC BY 4.0.
 - **Nessuna restrizione aggiuntiva**: non puoi aggiungere condizioni legali o misure tecnologiche che impediscano ad altri di fare ciò che la licenza consente.
 
 I **testi dei provvedimenti** prodotti con il generatore appartengono a chi li crea.
