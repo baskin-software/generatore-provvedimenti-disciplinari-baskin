@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Se usi o riadatti questo progetto, cita l'autore così:"
+title: "Generatore Provvedimenti Disciplinari Baskin"
+authors:
+  - family-names: "Lolli"
+    given-names: "Daniele"
+    alias: "UncleDan"
+version: "1.1"
+license: MIT
+type: software
